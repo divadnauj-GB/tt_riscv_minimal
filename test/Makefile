@@ -7,6 +7,21 @@ FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
 PROJECT_SOURCES = project.v
+PROJECT_SOURCES += soc/ELDI_SoC.v
+PROJECT_SOURCES += soc/gpio.v
+PROJECT_SOURCES += soc/ram.v
+PROJECT_SOURCES += soc/rom.v
+PROJECT_SOURCES += soc/vga_controller.v
+PROJECT_SOURCES += cpu/Alu.v
+PROJECT_SOURCES += cpu/AluControl.v
+PROJECT_SOURCES += cpu/ByteSelect.v
+PROJECT_SOURCES += cpu/ImmSrc.v
+PROJECT_SOURCES += cpu/ControlUnit.v
+PROJECT_SOURCES += cpu/LoadSignExt.v
+PROJECT_SOURCES += cpu/MainInstructionDecoder.v
+PROJECT_SOURCES += cpu/PCControl.v
+PROJECT_SOURCES += cpu/RegFile.v
+PROJECT_SOURCES += cpu/RiscvCore.v
 
 ifneq ($(GATES),yes)
 
